@@ -6,6 +6,8 @@
 repeatmasker_to_summary.py hg38.fa.out.gz > hg38.fa.repeatmasker_output_summary.tab
 
     input can be .gz
+    example based on data from:
+    http://repeatmasker.org/species/hg.html
 
   generates 4-column summary table consisting of:
 repeatclass    number    total bases    percent of total
