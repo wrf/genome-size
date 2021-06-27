@@ -33,5 +33,9 @@ Some other analyses made use of data from the paper:
 
 Francis, W.R. and G. Worheide (2017) [Similar ratios of introns to intergenic sequence across animal genomes](https://academic.oup.com/gbe/article-lookup/doi/10.1093/gbe/evx103) *Genome Biology and Evolution* 9 (6): 1582-1598.
 
-All raw data ([for re-anaylsis or figures](https://bitbucket.org/wrf/genome-reannotations/src)) and re-annotations ([both GFF and protein](https://bitbucket.org/wrf/genome-reannotations/downloads)) can be found at the [bitbucket repository of the same name](https://bitbucket.org/wrf/genome-reannotations/overview)
+In this paper, I had shown a similar ratio of introns to intergenic sequence in a few dozen animal genomes, suggesting that the processes that shape intronic and intergenic fractions are likely similar. This has been extended to many more species, now including many chromosome-level assemblies. All raw data ([for re-anaylsis or figures](https://bitbucket.org/wrf/genome-reannotations/src)) and re-annotations ([both GFF and protein](https://bitbucket.org/wrf/genome-reannotations/downloads)) can be found at the [associated bitbucket repository](https://bitbucket.org/wrf/genome-reannotations/overview)
+
+There are a few unresolved questions with this result. The first is the consideration of the role of time in evolution. As prokaryotes do not have introns, the "original" eukaryote would have been intronless, but nonetheless had intergenic regions (single digit percent). After the symbiosis event, introns were introduced, probably from genes from the symbiont. This easily could have resutled in a genome with *more* intronic bases than intergenic, meaning that the ratio of intron:intergenic went from 0:1, up to maybe 10:1, and then had to stabilize at some point.
+
+The second issue is dealing with the number of introns versus the number of intergenic blocks. The *number* of bases is the same, though the number of blocks is tenfold higher for introns (depending on eukaryotic species). Again, this suggests that it is the [number of bases that matters, and not the number of blocks](https://github.com/wrf/misc-analyses/tree/master/intron_evolution).
 
