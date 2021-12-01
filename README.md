@@ -2,7 +2,9 @@
 examination of genome size and content across the tree of life
 
 ## relationship of genome size vs gene count ##
-There is a rather strict relationship of genome size to gene count among prokaryotes, of approximately 1000bp per gene. This rule breaks down for eukaryotes, particularly the plants and animals.
+There is a rather strict relationship of genome size to gene count among prokaryotes, of approximately 1000bp per gene. This rule breaks down for eukaryotes, particularly the plants and animals. Larger proteins (hence larger genes) are much more common in eukaryotes, due to protein/domain fusions or repeated domains. Below, the spike in human proteins at ~350AAs is due to olfactory receptors.
+
+![comparative_protein_size_plot_v1.png](https://github.com/wrf/genome-size/blob/master/images/comparative_protein_size_plot_v1.png)
 
 Prokaryotic genome data from refseq assembly stats and feature counts were downloaded from [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/). This included both the "Assembly Statistics Report" and the "Feature Counts Report", for both archaea and bacteria. The data of each assembly and annotation was then combined using the python script [aggregate_size_and_features.py](https://github.com/wrf/genome-size/blob/master/aggregate_size_and_features.py).
 
