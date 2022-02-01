@@ -39,7 +39,36 @@ legend(0,5.1,bty='n',legend=names(table(kingdoms)), pch=15, cex=2, col=c("#7a017
 legend(1.5,3.3,bty='n',legend=c("Archaea", "Bacteria"), pch=15, cex=2, col=c("#de851b","#b62603"))
 dev.off()
 
+pdf(file="~/git/genome-size/images/refseq_proks_w_elliott2015_genome_size_vs_gene_size_v1.pdf", width=8, height=6)
+par(mar=c(4.5,4.5,1,1))
+plot(0,0,type='n',xlim=c(5,10.5), ylim=c(2.5,6.5),xlab="Genome size (log bp)", ylab="Avg gene size (log bp)", frame.plot=FALSE, cex.axis=1.5, cex.lab=1.5, axes=FALSE)
+axis(1, cex.axis=1.5)
+axis(2, cex.axis=1.5)
+points( log10(bacteriadata[,3]), log10(bacteriadata[,3]/bacteriadata[,4]), pch=16, cex=2, col="#b6260322")
+points( log10(archaeadata[,3]), log10(archaeadata[,3]/archaeadata[,4]), pch=16, cex=2, col="#de851b55")
+points( log10(genome_size*1000000), log10(genome_size*1000000/gene_count), pch=16, cex=2, col=kingdom_colors[kingdom_col_index])
+arrows(8.9,5.5,log10(genome_size[6]*1000000),log10(genome_size[6]*1000000/gene_count[6]),lwd=4)
+text(8.9,5.5,"human",pos=3, cex=1.1)
+legend(5,6.5,bty='n',legend=c(names(table(kingdoms)),"Archaea", "Bacteria"), pch=15, cex=2, col=c("#7a0177", "#08309b", "#00841b", "#888888","#de851b","#b62603") )
+dev.off()
 
+pdf(file="~/git/genome-size/images/refseq_proks_w_elliott2015_genome_size_vs_genes_per_mb_v1.pdf", width=8, height=6)
+par(mar=c(4.5,4.5,1,1))
+plot(0,0,type='n',xlim=c(5,10.5), ylim=c(0,1250),xlab="Genome size (log bp)", ylab="Genes per Mb", frame.plot=FALSE, cex.axis=1.5, cex.lab=1.5, axes=FALSE)
+points( log10(bacteriadata[,3]), 1000000/(bacteriadata[,3]/bacteriadata[,4]), pch=16, cex=2, col="#b6260322")
+points( log10(archaeadata[,3]), 1000000/(archaeadata[,3]/archaeadata[,4]), pch=16, cex=2, col="#de851b55")
+points( log10(genome_size*1000000), 1000000/(genome_size*1000000/gene_count), pch=16, cex=2, col=kingdom_colors[kingdom_col_index])
+axis(1, cex.axis=1.5)
+axis(2, cex.axis=1.4, at=seq(0,1200,200), labels=seq(0,1200,200))
+legend(8,1250,bty='n',legend=c(names(table(kingdoms)),"Archaea", "Bacteria"), pch=15, cex=2, col=c("#7a0177", "#08309b", "#00841b", "#888888","#de851b","#b62603") )
+dev.off()
+
+
+
+
+#
+# display roughly same figure, but for proks only
+#
 pdf(file="~/git/genome-size/images/ncbi_proks_only_genome_size_vs_gene_count_v1.pdf", width=8, height=6)
 par(mar=c(4.5,4.5,1,1))
 plot(0,0,type='n',xlim=c(-0.1,4.5), ylim=c(2.8,5),xlab="Genome size (Mb)", ylab="Number of genes (log)", frame.plot=FALSE, cex.axis=1.5, cex.lab=1.5, axes=FALSE)
@@ -60,6 +89,8 @@ points( bacteriadata[,3]/1000000, bacteriadata[,4], pch=16, cex=2, col="#b626032
 points( archaeadata[,3]/1000000, archaeadata[,4], pch=16, cex=2, col="#de851b55")
 legend(0,10000,bty='n',legend=c("Archaea", "Bacteria"), pch=15, cex=2, col=c("#de851b","#b62603"))
 dev.off()
+
+
 
 
 

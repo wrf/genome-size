@@ -1,16 +1,20 @@
 # genome-size #
 examination of genome size and content across the tree of life
 
-## relationship of genome size vs gene count ##
-There is a rather strict relationship of genome size to gene count among prokaryotes, of approximately 1000bp per gene. This rule breaks down for eukaryotes, particularly the plants and animals. Larger proteins (hence larger genes) are much more common in eukaryotes, due to protein/domain fusions or repeated domains. Below, the spike in human proteins at ~350AAs is due to olfactory receptors.
-
-![comparative_protein_size_plot_v1.png](https://github.com/wrf/genome-size/blob/master/images/comparative_protein_size_plot_v1.png)
-
 Prokaryotic genome data from refseq assembly stats and feature counts were downloaded from [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/). This included both the "Assembly Statistics Report" and the "Feature Counts Report", for both archaea and bacteria. The data of each assembly and annotation was then combined using the python script [aggregate_size_and_features.py](https://github.com/wrf/genome-size/blob/master/aggregate_size_and_features.py).
 
 Eukaryotic genome data were reported in the supplement of [Elliott 2015 What's in a genome? The C-value enigma and the evolution of eukaryotic genome content](https://doi.org/10.1098/rstb.2014.0331).
 
+## relationship of genome size vs gene count ##
+There is a rather strict relationship of genome size to gene count among prokaryotes, of approximately 1000bp per gene. 
+
+![refseq_proks_w_elliott2015_genome_size_vs_gene_size_v1.png](https://github.com/wrf/genome-size/blob/master/images/refseq_proks_w_elliott2015_genome_size_vs_gene_size_v1.png)
+
 ![refseq_proks_w_elliott2015_genome_size_vs_gene_count_v1.png](https://github.com/wrf/genome-size/blob/master/images/refseq_proks_w_elliott2015_genome_size_vs_gene_count_v1.png)
+
+This rule breaks down for eukaryotes, particularly the plants and animals. Larger proteins (hence larger genes) are much more common in eukaryotes, due to protein/domain fusions or repeated domains. The bulk of much larger genes, however, is junk in the form of introns. The largest human protein, [titin](https://www.ncbi.nlm.nih.gov/gene/7273) (281kb of 365 exons), is not the largest gene, which is instead [dystrophin](https://www.ncbi.nlm.nih.gov/gene/1756) (2Mb of 89 exons). The [dystrophin protein](https://www.uniprot.org/uniprot/P11532) is almost 10x smaller than the [titin protein](https://www.uniprot.org/uniprot/Q8WZ42), but the gene is 10x larger. Below, the spike in human proteins at ~300-350AAs is due to [olfactory receptors](https://www.uniprot.org/uniprot/?query=olfactory%20receptor&fil=reviewed%3Ayes+AND+organism%3A%22Homo+sapiens+%28Human%29+%5B9606%5D%22&sort=score).
+
+![comparative_protein_size_plot_v1.png](https://github.com/wrf/genome-size/blob/master/images/comparative_protein_size_plot_v1.png)
 
 The largest bacterial genomes in this set are [Sorangium cellulosum](https://www.ncbi.nlm.nih.gov/assembly/GCF_000067165.1) of 13.0Mb and [Ktedonobacter racemifer](https://www.ncbi.nlm.nih.gov/assembly/GCF_000178855.1) of 13.6Mb. This is substantially larger than the largest currently assembled archaeal genome, [Haloterrigena turkmenica](https://www.ncbi.nlm.nih.gov/assembly/GCF_000025325.1) of 5.4Mb. Nonetheless, both domains follow the gene-genome size scaling rule. Due to the single copy of the genome and absence of recombination mechanisms for most prokaryotes, the genome size would be determined by an equilibrium of gene addition (by HGT or duplication) and streamlining by stochastic gene loss. There are not many mechanisms of creating totally new genes (with respect to any given genome), either duplication and subsequent diversification, or possibly [frameshifting an existing protein](https://doi.org/10.1073/pnas.81.8.2421). As the average gene size is also around 1kb for nearly all prokaryotes, this also suggests that few genes result from fusion of other genes.
 
