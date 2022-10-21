@@ -3,7 +3,7 @@ examination of genome size and content across the tree of life
 
 Prokaryotic genome data from refseq assembly stats and feature counts were downloaded from [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/). This included both the "Assembly Statistics Report" and the "Feature Counts Report", for both archaea and bacteria. The data of each assembly and annotation was then combined using the python script [aggregate_size_and_features.py](https://github.com/wrf/genome-size/blob/master/aggregate_size_and_features.py).
 
-Eukaryotic genome data were reported in the supplement of [Elliott 2015 What's in a genome? The C-value enigma and the evolution of eukaryotic genome content](https://doi.org/10.1098/rstb.2014.0331).
+Eukaryotic genome data were reported in the supplement of [Elliott 2015 What's in a genome? The C-value enigma and the evolution of eukaryotic genome content](https://doi.org/10.1098/rstb.2014.0331). Daily updated versions are taken from [NCBI GENOME REPORTS](https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/).
 
 ## relationship of genome size vs gene count ##
 There is a rather strict relationship of genome size to gene count among prokaryotes, of approximately 1000bp per gene. 
