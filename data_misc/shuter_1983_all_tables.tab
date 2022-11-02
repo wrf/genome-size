@@ -1,0 +1,123 @@
+# data from Shuter 1983
+# bacteria DNA content from genome size estimates from Wallace and Morowitz 1973
+# cell volume from mid point of size range Buchanan Gibbons 1974
+# doubling time from Altman and Dittmer 1962
+# cyanobacteria genome size from Herdman 1979
+# cyanobacteria cell volume from Rippka 1979
+# for eukaryotes DNA content is G1 phase
+species	DNA_pgm	micronucleus_pgm	volume_u3	doubling_time_h	clade	domain	ref
+Aerobacter aerogenes	0.002	NA	NA	0.698	schizomycophyta	bacteria	Sober 1970; Leick 1968
+Bacillus subtilis	0.0038	NA	1.1	0.94	schizomycophyta	bacteria	Leick 1968
+Bacillus cereus	0.0043	NA	3.8	0.74	schizomycophyta	bacteria	
+Bacillus megatherium	0.011	NA	NA	0.828	schizomycophyta	bacteria	Sober 1970; Leick 1968
+Bacillus anthracis	0.0046	NA	3.8	NA	schizomycophyta	bacteria	
+Bacillus polymyxa	0.0046	NA	1.35	NA	schizomycophyta	bacteria	
+Diplococcus pneumoniae	0.0024	NA	NA	0.879	schizomycophyta	bacteria	Bak 1970
+Escherichia coli	0.0037	NA	5.31	0.554	schizomycophyta	bacteria	
+Mycoplasma gallisepticum	0.0008	NA	0.18	NA	schizomycophyta	bacteria	Morowitz 1967
+Salmonella typhimurium	0.0044	NA	NA	0.81	schizomycophyta	bacteria	Leick 1968
+Clostridium welchii	0.024	NA	NA	1.53	schizomycophyta	bacteria	Webb 1953
+Pseudomonas fluorescens	0.0045	NA	1.13	1.08	schizomycophyta	bacteria	
+Pseudomonas putida	0.0045	NA	1.13	NA	schizomycophyta	bacteria	
+Proteus vulgaris	0.0035	NA	0.39	0.976	schizomycophyta	bacteria	
+Serratia marcescens	0.0083	NA	NA	0.84	schizomycophyta	bacteria	Leick 1968; Bak 1970 
+Staphylococcus aureus	0.0024	NA	0.382	1.19	schizomycophyta	bacteria	
+Staphylococcus albus	0.0019	NA	NA	1.05	schizomycophyta	bacteria	
+Streptococcus faecalis	0.0024	NA	0.221	1.16	schizomycophyta	bacteria	
+Streptococcus pyrogenes	0.0021	NA	0.27	NA	schizomycophyta	bacteria	
+Streptococcus agalactiae	0.002	NA	0.382	NA	schizomycophyta	bacteria	
+Neisseria sp	0.0022	NA	0.27	NA	schizomycophyta	bacteria	
+Acaligenes odorans	0.0031	NA	0.25	NA	schizomycophyta	bacteria	
+Haemophilus influenzae	0.0022	NA	0.061	NA	schizomycophyta	bacteria	
+Haemophilus aegypticus	0.0019	NA	0.193	NA	schizomycophyta	bacteria	
+Moraxella osloensis	0.0025	NA	2.45	NA	schizomycophyta	bacteria	
+Pasteurella multocida	0.0019	NA	0.615	NA	schizomycophyta	bacteria	
+Nitrosococcus sp	0.0036	NA	3.3	NA	schizomycophyta	bacteria	
+Nitrosomonas sp	0.0023	NA	0.85	NA	schizomycophyta	bacteria	
+Bdellovibrio sp	0.0026	NA	0.08	NA	schizomycophyta	bacteria	
+Vibrio metschnicovii	0.0038	NA	0.44	NA	schizomycophyta	bacteria	
+Synechococcus 7424	0.007	NA	128	NA	cyanobacteria	bacteria	
+Synechococcus 7335	0.0052	NA	2.4	NA	cyanobacteria	bacteria	
+Anacystis nidulans	0.0038	NA	4	NA	cyanobacteria	bacteria	
+Synechocystis 6808	0.0035	NA	19	NA	cyanobacteria	bacteria	
+Synechocystis 7509	0.0058	NA	18.8	NA	cyanobacteria	bacteria	
+Gloeobacter 7421	0.0045	NA	2.1	NA	cyanobacteria	bacteria	
+Gloeocapsa 73106	0.0049	NA	65.4	NA	cyanobacteria	bacteria	
+Gloeocapsa 7428	0.0058	NA	8.2	NA	cyanobacteria	bacteria	
+Chamaesiphon 7430	0.006	NA	26.5	NA	cyanobacteria	bacteria	
+Chamaesiphon 6605	0.006	NA	13	NA	cyanobacteria	bacteria	
+Pseudanabaena 7402	0.0042	NA	11.5	NA	cyanobacteria	bacteria	
+Pseudanabaena 7429	0.0056	NA	13.2	NA	cyanobacteria	bacteria	
+Pseudanabaena 6406	0.0063	NA	2.3	NA	cyanobacteria	bacteria	
+LPP group sp 7376	0.0044	NA	2.4	NA	cyanobacteria	bacteria	
+LPP group sp 7505	0.0064	NA	3.66	NA	cyanobacteria	bacteria	
+LPP group sp 7408	0.0086	NA	12.9	NA	cyanobacteria	bacteria	
+Anabaena 7122	0.0053	NA	25.9	NA	cyanobacteria	bacteria	
+Anabaena 7120	0.0062	NA	18.5	NA	cyanobacteria	bacteria	
+Nodularia 73104	0.0055	NA	57	NA	cyanobacteria	bacteria	
+Nostoc 73102	0.0081	NA	50.2	NA	cyanobacteria	bacteria	
+Nostoc 6705	0.0092	NA	20.6	NA	cyanobacteria	bacteria	
+Calothrix 7116	0.009	NA	124	NA	cyanobacteria	bacteria	
+Calothrix 7507	0.0091	NA	37.2	NA	cyanobacteria	bacteria	
+Chlorogloeopsis 6718	0.0087	NA	33.5	NA	cyanobacteria	bacteria	
+Fischerella 7521	0.006	NA	7.3	NA	cyanobacteria	bacteria	
+Fischerella 7115	0.0076	NA	48.4	NA	cyanobacteria	bacteria	
+Fischerella 7414	0.0079	NA	46.4	NA	cyanobacteria	bacteria	
+Chlorella sp	0.12	NA	NA	8.7	chlorophyceae	eukaryote	Myers and Graham 1971
+Chlorella pyrenoidosa	0.032	NA	8.8	5.1	chlorophyceae	eukaryote	Prokop and Ricica 1968a; Prokop and Ricica 1968b
+Chlorella ellipsoida	0.0796	NA	103	NA	chlorophyceae	eukaryote	Sparrow 1972; Winokur 1948
+Scenedesmus quadricauda	0.1	NA	NA	7.5	chlorophyceae	eukaryote	Setlik 1972
+Dunaliella tertiolecta	0.336	NA	178	7.4	chlorophyceae	eukaryote	Holm-Hansen 1969; Eppley and Sloan 1966
+Prototheca zopfii	0.0704	NA	263	3.6	chlorophyceae	eukaryote	Poyton 1973
+Chlamydomonas reinhardii	0.123	NA	300	NA	chlorophyceae	eukaryote	Chiang and Seuoka 1967; Pickett_heaps 1975
+Thalassiosira rotula	5.2	NA	NA	8.4	bacillariophyceae	eukaryote	Schone 1972
+Thalassiosira fluviatilis	3.29	NA	2239	11	bacillariophyceae	eukaryote	Holm-Hansen 1969; Laws and Bannister 1980
+Thalassiosira pseudonana	0.116	NA	NA	3.86	bacillariophyceae	eukaryote	Goldman and McCarthy 1978
+Thalassiosira floridana	0.53	NA	NA	7.1	bacillariophyceae	eukaryote	Chan 1978
+Thalassiosira eccentrica	26.1	NA	NA	9.9	bacillariophyceae	eukaryote	Chan 1978
+Skeletonema costatum	0.336	NA	224	4.5	bacillariophyceae	eukaryote	Holm-Hansen 1969; McAllister 1964
+Ditylum brightwellii	12.9	NA	14125	9.7	bacillariophyceae	eukaryote	Holm-Hansen 1969; Paasche 1968
+Coscinodiscus asteromphalus	50	NA	165600	25.7	bacillariophyceae	eukaryote	Werner 1971
+Coscinodiscus pavillardii	200	NA	NA	22.5	bacillariophyceae	eukaryote	Findlay 1972
+Chaetoceros sp1	0.053	NA	NA	7.2	bacillariophyceae	eukaryote	Chan 1978
+Chaetoceros sp2	0.28	NA	NA	4.7	bacillariophyceae	eukaryote	Thomas 1966
+Cylindrotheca fusiformis	0.43	NA	NA	7.3	bacillariophyceae	eukaryote	Chan 1978
+Nitzschia turgidula	0.34	NA	NA	7.8	bacillariophyceae	eukaryote	Paasche 1968
+Rhizosolenia fragillissima	8.27	NA	NA	14	bacillariophyceae	eukaryote	Ignatiades and Smayda 1970
+Navicula pelliculosa	0.071	NA	66.1	NA	bacillariophyceae	eukaryote	Holm-Hansen 1969
+Gonyaulax excavata	21.2	NA	NA	7.9	dinophyceae	eukaryote	Yentsch 1980
+Gonyaulax polyedra	100	NA	81280	NA	dinophyceae	eukaryote	Holm-Hansen 1969
+Gymnodinium 582	1.08	NA	NA	15.9	dinophyceae	eukaryote	Chan 1978
+Gymnodinium simplex	0.53	NA	NA	16.8	dinophyceae	eukaryote	Chan 1978
+Gymnodinium nelsoni	71.5	NA	53600	NA	dinophyceae	eukaryote	Rizzo and Nooden 1973; Mendiola 1966
+Gymnodinium breve	50.8	NA	17157	NA	dinophyceae	eukaryote	Kim and Martn 1974
+Scrippsiella sweeneyae	15.1	NA	NA	25.1	dinophyceae	eukaryote	Chan 1978
+Prorocentrum micans	11	NA	NA	35.5	dinophyceae	eukaryote	Chan 1978
+Procentrum micans	21	NA	29900	NA	dinophyceae	eukaryote	Bursa 1959
+Ceratium fusca	26.1	NA	NA	21	dinophyceae	eukaryote	Weiler and Eppley 1979
+Amphidinium carteri	1.38	NA	955	NA	dinophyceae	eukaryote	Holm-Hansen 1969
+Cochonina niei	5	NA	1380	NA	dinophyceae	eukaryote	Holm-Hansen 1969
+Gyrodinium cohnii	3.5	NA	1845	NA	dinophyceae	eukaryote	Rizzo and Nooden 1972; Schiller 1933
+Peridinium trochoideum	17	NA	8250	NA	dinophyceae	eukaryote	Rizzo and Nooden 1973; Mullin 1966
+Monochrysis lutheri	0.071	NA	41.7	NA	chrysophyceae	eukaryote	Holm-Hansen 1969
+Syracosphaera elongata	2.36	NA	912	NA	chrysophyceae	eukaryote	Holm-Hansen 1969
+Cryptomonas erosa	1.84	NA	NA	19	cryptophyceae	eukaryote	Morgan and Kalff 1979
+Euglena gracilis	2.42	NA	3700	12.4	euglenophyta	eukaryote	Cook 1963
+Schizosaccharomyces pombe	0.03	NA	130	3.5	ascomycetes	eukaryote	Mitchison and Creanor 1971; Mitchison 1971; Flury 1974
+Saccharomyces cerevisiae	0.03	NA	103	2.03	ascomycetes	eukaryote	Gunge and Nakatomi 1972; Leick 1968
+Amoeba dubia	700	NA	950000	NA	protozoa	eukaryote	Friz 1968
+Amoeba proteus	300	NA	950000	NA	protozoa	eukaryote	Friz 1968
+Trichomonas gallinae	0.7	NA	296	NA	protozoa	eukaryote	Sparrow 1972; Kudo 1966
+Trichomonas vaginalis	1	NA	3533	NA	protozoa	eukaryote	Sparrow 1972; Kudo 1966
+Tetrahymena pyriformis	16.9	NA	27380	NA	ciliate	eukaryote	Taylor and Shuter 1981
+Cyclidium glaucoma	0.86	0.12	2795	7	ciliate	eukaryote	Taylor and Shuter 1981
+Glaucoma scintillans	22.6	0.28	23883	3.2	ciliate	eukaryote	Taylor and Shuter 1981
+Colpidium campylum	23.3	0.53	26842	3.3	ciliate	eukaryote	Morat 1970
+Paramecium trichium	59.5	3.23	66264	9.7	ciliate	eukaryote	Taylor and Shuter 1981
+Colpidium colpoda	62	1.15	76123	6.8	ciliate	eukaryote	Taylor and Shuter 1981
+Paramecium caudatum	310	17.5	514769	10.2	ciliate	eukaryote	Taylor and Shuter 1981
+Didinium nasutum	633	2.1	1300000	7.7	ciliate	eukaryote	Taylor and Shuter 1981
+Glaucoma frontata	121.8	2.1	171585	6.7	ciliate	eukaryote	Taylor and Shuter 1981
+Halteria grandinella	28.5	0.91	17736	7.8	ciliate	eukaryote	Taylor and Shuter 1981
+Paramecium bursaria	77.9	7.5	123572	16.6	ciliate	eukaryote	Cullis 1973
+Tetrahymena pyriformis	10.7	0.41	17067	4.3	ciliate	eukaryote	Gibson and Martin 1971

@@ -24,8 +24,19 @@ For reasons of saving the energetic cost of replication, transcription, and prot
 
 Eukaryotes on the other hand appear free from this constraint. While, at the moment, it does not appear that single-celled eukaryotes follow any such rule, it is clear that multicellular plants and animals have no correlation between genome size and gene number. Diploidy probably plays a role in this, as it becomes increasingly difficult to remove genes from a population, meaning that the stochastic removal (random) of a gene from a population would become fixed more from drift (also random) than selection by energetics.
 
+A key relationship that follows is that of cell size to genome size (see data from [Shuter 1983](https://doi.org/10.1086/284116)), and [Cavalier-Smith 2005](https://doi.org/10.1093/aob/mci010) argues that several factors influence genome size in protists.
+
+> "*The central factor is cell volume. This is generally highly adaptive in both multicellular organisms and protists. A huge range (roughly 300 000-fold) of cell sizes has evolved in eukaryotes for adaptive reasons; but the spectrum is markedly different in breadth and mean in different groups, which is also adaptively explicable. The spectrum results from opposing advantages and disadvantages of small versus large cells. Cell volume for protists is the same as body size and thus fundamentally and centrally important for defining their ecological niche.*"
+
+![shuter_1983_figure_1.png](https://github.com/wrf/genome-size/blob/master/images/shuter_1983_figure_1.png)
+
+A small eukaryotic prey may be eaten by a larger predator, but a mutation in that cell could increase the cell size (via duplication, cell cycle mutation, etc). That is, if a larger genome means a larger cell, then it may be able to eat more things, and fewer things can swallow it.
+
+
 ## overview of animal genome sizes ##
-This plot was based on data downloaded from the [Animal Genome Size Database](http://www.genomesize.com/), and plotted with the Rscript [animal_genome_size_overview_v1.R](https://github.com/wrf/genome-size/blob/master/animal_genome_size_overview_v1.R). Birds and mammals appear quite constrained in their genome sizes, though perhaps the same would be seen if the other phyla-level plots were restricted to subgroups.
+This plot was based on data downloaded from the [Animal Genome Size Database](http://www.genomesize.com/), and plotted with the Rscript [animal_genome_size_overview_v1.R](https://github.com/wrf/genome-size/blob/master/animal_genome_size_overview_v1.R). Birds and mammals appear quite constrained in their genome sizes, though perhaps the same would be seen if the other phyla-level plots were restricted to subgroups, though [Cavalier-Smith 2005](https://doi.org/10.1093/aob/mci010) asserts that the reason for this is in relation to cell size:
+
+> "*This is well shown in mammals, where all eutherian orders have essentially the same genome size, except bats which, like birds, have smaller cells to allow more rapid gas exchange by red cells during flight.*"
 
 ![animalgenomes_combined_animals_v1.png](https://github.com/wrf/genome-size/blob/master/images/animalgenomes_combined_animals_v1.png)
 
