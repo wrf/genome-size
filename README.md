@@ -43,7 +43,13 @@ This plot was based on data downloaded from the [Animal Genome Size Database](ht
 ## repeat content ##
 A barplot of repeats in the human genome was based on data from [repeatmasker.org](http://repeatmasker.org/species/hg.html). This was preprocessed with the python script [repeatmasker_to_summary.py](https://github.com/wrf/genome-size/blob/master/repeatmasker_to_summary.py) and then plotted with the associated Rscript [make_repeatmasker_barplot.R](https://github.com/wrf/genome-size/blob/master/make_repeatmasker_barplot.R).
 
-![human_GRCh38.repeat_top_10_barplot.png](https://github.com/wrf/genome-size/blob/master/images/human_GRCh38.repeat_top_10_barplot.png)
+`~/git/genome-size/repeatmasker_to_summary.py hg38.fa.out.gz > hg38.fa.out.summary.tab`
+
+![barplot of human_GRCh38 top 10 repeats](https://github.com/wrf/genome-size/blob/master/images/human_GRCh38.repeat_top_10_barplot.png)
+
+Consequently, most of the human genome is junk, as hypothesized by [Ohno in 1972](https://doi.org/10.1016/0047-2484(72)90011-5). Two papers with more modern methods find roughly the same, using comparison across mammals by [Lindblad-Toh 2011](https://doi.org/10.1038/nature10530) or across human populations by [Ward 2012](https://doi.org/10.1126/science.1225057).
+
+![pie chart of conservation of the human genome](https://github.com/wrf/genome-size/blob/master/images/human_genome_conservation_v1.png)
 
 ## reannotations of genomes ##
 Some other analyses made use of data from the paper:
@@ -53,6 +59,8 @@ Francis, W.R. and G. Worheide (2017) [Similar ratios of introns to intergenic se
 In this paper, I had shown a similar ratio of introns to intergenic sequence in a few dozen animal genomes, suggesting that the processes that shape intronic and intergenic fractions are likely similar. This has been extended to many more species, now including many chromosome-level assemblies. All raw data ([for re-anaylsis or figures](https://bitbucket.org/wrf/genome-reannotations/src)) and re-annotations ([both GFF and protein](https://bitbucket.org/wrf/genome-reannotations/downloads)) can be found at the [associated bitbucket repository](https://bitbucket.org/wrf/genome-reannotations/overview)
 
 There are a few unresolved questions with this result. The first is the consideration of the role of time in evolution. As prokaryotes do not have introns, the "original" eukaryote would have been intronless, but nonetheless had intergenic regions (single digit percent). After the symbiosis event, introns were introduced, probably from genes from the symbiont. This easily could have resutled in a genome with *more* intronic bases than intergenic, meaning that the ratio of intron:intergenic went from 0:1, up to maybe 10:1, and then had to stabilize at some point.
+
+![eukaryotic origin intron with intergenic scheme](https://github.com/wrf/genome-size/blob/master/images/eukaryotic_origin_intron_v_intergenic_scheme_v1.png)
 
 The second issue is dealing with the number of introns versus the number of intergenic blocks. The *number* of bases is the same, though the number of blocks is tenfold higher for introns (depending on eukaryotic species). Again, this suggests that it is the [number of bases that matters, and not the number of blocks](https://github.com/wrf/misc-analyses/tree/master/intron_evolution).
 
