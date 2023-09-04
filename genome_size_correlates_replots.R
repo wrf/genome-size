@@ -40,6 +40,32 @@ ggsave("~/git/genome-size/images/shuter_1983_figure_1.png", gg, device = "png", 
 
 
 
+################################################################################
+
+# https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
+
+eukgenomes = read.table("~/git/genome-size/ncbi_ftp/eukaryotes.txt.gz", header = TRUE, sep="\t" , quote = "", comment.char = "", stringsAsFactors = FALSE)
+eukgenomes.f = filter(eukgenomes, Status %in% c("Chromosome", "Complete Genome", "Scaffold"),
+                      Genes != "-")
+kingdoms = table(eukgenomes.f$Group)
+#                   purple       blue         brown         green        gray
+kingdom_colors = c("#7a017766", "#08309b66", "#9b083066", "#00841b66", "#88888866")
+kingdom_col_index = match(eukgenomes.f$Group,names(kingdoms))
+
+prokgenomes = read.table("~/git/genome-size/ncbi_ftp/prokaryotes.txt.gz", header = TRUE, sep="\t" , quote = "", comment.char = "", stringsAsFactors = FALSE)
+prokgenomes.f = filter(prokgenomes, Status %in% c("Chromosome", "Complete Genome", "Scaffold"),
+                       Genes != "-")
+archaea_groups = c("Asgard group", "Candidatus Hydrothermarchaeota", "Euryarchaeota", "TACK group", "unclassified Archaea" )
+
+pdf(file="~/git/genome-size/images/ncbi_genomes_size_vs_genes_2022.pdf", width=8, height=6)
+par(mar=c(4.5,4.5,1,1))
+plot(0,0,type='n',xlim=c(-0.1,4.5), ylim=c(2,5),xlab="Genome size (Mb)", ylab="Number of genes (log)", 
+     frame.plot=FALSE, cex.axis=1.5, cex.lab=1.5, axes=FALSE)
+axis(1, at=c(0,1,2,3,4), labels=c("1","10","100","1000","10000"), cex.axis=1.5)
+axis(2, cex.axis=1.5)
+points( log10(eukgenomes.f$Size..Mb.), log10(as.numeric(eukgenomes.f$Genes)), pch=16, cex=2, col=kingdom_colors[kingdom_col_index])
+points( log10(prokgenomes.f$Size..Mb.) , log10(as.numeric(prokgenomes.f$Genes)), pch=16, cex=2, col=ifelse(prokgenomes$Group %in% archaea_groups, "#de851b55", "#b6260322") )
+dev.off()
+
 
 #
-
